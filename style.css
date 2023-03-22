@@ -159,10 +159,6 @@ hr{
     color: var(--text);
 }
 
-.row{
-    color: white;
-    margin:40px 20px ;
-}
 
 .container{
     width: 100vw;
@@ -171,6 +167,11 @@ hr{
     padding-top: 7rem;
     padding-left: 20rem;
     padding-bottom: 7rem;
+}
+
+.row{
+    color: white;
+    margin:40px 20px ;
 }
 
 .row h2{
@@ -192,12 +193,23 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 30px 30px 0;
+    width: 100%;
+}
+
+.card img, .card-circle img{
+    width: 100%;
+}
+
+.card h3{
+    margin-top: 10px ;
+}
+
+.cell{
+    padding: 25px;
+    width:calc( 100% / 6 );
 }
 
 .circle-img img{
-    height: 300px;
-    width: 300px;
     border-radius: 50%;
 }
 
@@ -210,7 +222,6 @@ hr{
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 
@@ -219,13 +230,22 @@ hr{
 /* media */
 
 
-/* @media (max-width:1349px) {
-    .card{
-        flex-grow: 1;
+@media (max-width:1100px){
+    .cell{
+        width:calc(100% / 4 );
     }
-} */
 
-@media (max-width:1021px) {
+}
+
+
+@media (max-width:700px) {
+    .cell{
+        width:calc(100% / 2 );
+    }
+}
+
+
+@media (max-width:600px) {
     .side-nav{
         width: 6rem;
     }
@@ -233,8 +253,5 @@ hr{
     .container{
         padding-left: 6rem;
     }
-/*
-    .card{
-        flex-grow: 0;
-    } */
+
 }
