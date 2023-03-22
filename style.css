@@ -37,8 +37,11 @@ body{
     background-color: transparent;
     border-radius: 30px;
     padding: 15px 50px;
+    margin-right: 25px;
 }
 
+
+/* aside */
 .side-nav{
     background-color:black;
     height: calc( 100vh - 7rem);
@@ -48,6 +51,10 @@ body{
     top: 0;
     bottom: 0;
     padding-left: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -83,7 +90,7 @@ body{
 }
 
 .playlist span{
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -91,6 +98,7 @@ body{
 
 .playlist span i{
     font-size: 50px;
+    margin-right: 7px;
 }
 
 .playlist ul li{
@@ -98,16 +106,41 @@ body{
     padding-top: 25px;
 }
 
-.bottom-nav{
-    background-color: var(--gray);
-    height: 7rem;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
+.install{
+    font-size: 16px;
 }
 
+.install img{
+    height: 20px;
+    width: 20px;
+    margin-right:10px ;
+}
+
+.content-bottom span{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin: 15px 0px;
+    width: 90%;
+}
+
+.profile{
+    color: white;
+    font-size: 20px;
+}
+
+.profile img{
+    background-color: var(--text);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right:10px ;
+}
+
+
+/* container main */
 .main-list{
     display: flex;
     justify-content: center;
@@ -170,6 +203,15 @@ body{
 
 
 
+.bottom-nav{
+    background-color: var(--gray);
+    height: 7rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
 
 
 
