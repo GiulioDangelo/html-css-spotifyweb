@@ -8,15 +8,21 @@
     --blue: rgb(20,25,34);
     --gray:rgb(40,40,40);
     --green:rgb(173,255,47);
+    --text: rgba(125, 127, 132, 1);
+}
+
+html{
+    font-family: 'Gotham', sans-serif;
 }
 
 body{
     background-color: var(--blue);
+    color: var(--text);
 }
 
 .upgrade-btn{
     height: 7rem;
-    background-color:aquamarine;
+    background-color:rgba(8, 11, 18, 0.4);
     display: flex;
     align-items: center;
     justify-content: end;
@@ -61,4 +67,32 @@ body{
     right: 0;
     bottom: 0;
 
+}
+
+.main-list{
+    display: flex;
+    justify-content: center;
+    list-style:none;
+    margin-top: 30px;
+}
+
+.main-list li{
+    margin-inline:30px ;
+    color: var(--text);
+}
+
+.main-list li a{
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    margin:40px 20px ;
+}
+
+.row h2{
+    font-size: 35px;
 }
