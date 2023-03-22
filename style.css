@@ -28,8 +28,7 @@ body{
     justify-content: end;
     position: fixed;
     right: 0;
-    z-index: 2;
-    left: 20rem;
+    left: 0rem;
 }
 
 .upgrade-btn button{
@@ -41,23 +40,62 @@ body{
 }
 
 .side-nav{
-    background-color:crimson;
+    background-color:black;
     height: calc( 100vh - 7rem);
     width: 20rem;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
+    padding-left: 20px;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-color: ;
-    overflow-y: auto;
-    padding-top: 7rem;
-    padding-left: 20rem;
-    padding-bottom: 7rem;
+
+.logo-big{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.icone{
+    display: flex;
+    flex-direction:column ;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.icone span{
+    padding-top: 15px;
+}
+
+.icone span:first-child{
+    color: white;
+}
+
+.playlist{
+    margin-top: 30px;
+}
+
+.playlist h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.playlist span{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.playlist span i{
+    font-size: 50px;
+}
+
+.playlist ul li{
+    list-style: none;
+    padding-top: 25px;
 }
 
 .bottom-nav{
@@ -67,7 +105,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-
+    
 }
 
 .main-list{
@@ -93,8 +131,18 @@ body{
     margin:40px 20px ;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 7rem;
+    padding-left: 20rem;
+    padding-bottom: 7rem;
+}
+
 .row h2{
     font-size: 35px;
+    margin-bottom: 10px;
 }
 
 .row .subtitle{
@@ -118,4 +166,33 @@ body{
     height: 300px;
     width: 300px;
     border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* media */
+
+
+/* @media (max-width:1349px) {
+    .card{
+        flex-grow: 1;
+    }
+} */
+
+@media (max-width:1021px) {
+    .side-nav{
+        width: 6rem;
+    }
+
+    .container{
+        padding-left: 6rem;
+    }
+/*
+    .card{
+        flex-grow: 0;
+    } */
 }
