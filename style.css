@@ -315,11 +315,26 @@ hr{
     padding-inline:20px ;
 }
 
-.player-line{
+.player-container{
+    position: relative;  
+    margin: 15px 0px;
     width: 100%;
     max-width: 700px;
+}
+
+.player-line{
     border: 2px solid var(--text);
     border-radius: 20px;
+}
+
+.line-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 60%;
+    height: 6px;
 }
 
 /* content right */
@@ -368,6 +383,10 @@ ul li a:hover{
 
 .hidden-container:hover .play-hidden{
     z-index: 0;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 /* media */
