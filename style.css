@@ -21,7 +21,7 @@ body{
 }
 
 .upgrade-btn{
-    height: 7rem;
+    height: 6rem;
     background-color:rgba(8, 11, 18, 0.4);
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ body{
 /* aside */
 .side-nav{
     background-color:black;
-    height: calc( 100vh - 7rem);
+    height: calc( 100vh - 6rem);
     width: 14rem;
     position: fixed;
     left: 0;
@@ -177,9 +177,9 @@ hr{
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-left: 14rem;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
 }
 
 .row{
@@ -229,7 +229,7 @@ hr{
 /* player */
 .bottom-nav{
     background-color: var(--gray);
-    height: 7rem;
+    height: 6rem;
     position: fixed;
     left: 0;
     right: 0;
@@ -242,7 +242,7 @@ hr{
 /* media */
 
 
-@media (max-width:1100px){
+@media (max-width:1290px){
     .cell{
         width:calc(100% / 4 );
     }
@@ -250,7 +250,7 @@ hr{
 }
 
 
-@media (max-width:700px) {
+@media (max-width:830px) {
     .cell{
         width:calc(100% / 2 );
     }
