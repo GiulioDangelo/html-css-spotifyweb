@@ -167,6 +167,15 @@ hr{
     margin-top: 30px;
 }
 
+.main-list li:first-child::after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 5px;
+    margin:5px auto;
+    background-color: var(--green);
+}
+
 .main-list li a{
     text-decoration: none;
     color: var(--text);
@@ -267,6 +276,12 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* max-width: 100%; */
+    flex-grow: 1;
+}
+
+.icon-player{
+    display: flex;
 }
 
 .icon-player i{
@@ -277,7 +292,8 @@ hr{
 
 
 .player-line{
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     border: 2px solid var(--text);
     border-radius: 20px;
 }
@@ -301,6 +317,13 @@ hr{
     width: 100px;
     border:2px solid var(--text);
 }
+
+
+/* effetti */
+.upgrade-btn button:hover{
+    transform: scale(1.2);
+}
+
 
 /* media */
 
