@@ -216,10 +216,29 @@ hr{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: relative;
+    
+}
+
+.play-hidden{
+   /* display: none;  */
+   /* position: absolute;
+   font-size: 100px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 5; */
+   position: absolute;
+   font-size: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 4;
 }
 
 .card img, .card-circle img{
     width: 100%;
+    
 }
 
 .card h3{
@@ -266,9 +285,14 @@ hr{
     color: white;
 }
 
+.icon-playing{
+    margin-inline: 10px;
+   
+}
+
 .icon-playing i{
-    margin-left: 10px;
     vertical-align: -webkit-baseline-middle;
+    margin-inline:2px ;
 }
 
 /* content center */
@@ -276,7 +300,6 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: 100%; */
     flex-grow: 1;
 }
 
@@ -289,7 +312,6 @@ hr{
     font-size: 30px;
     padding-inline:20px ;
 }
-
 
 .player-line{
     width: 100%;
@@ -324,6 +346,27 @@ hr{
     transform: scale(1.2);
 }
 
+ul li a:hover{
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.icone>:hover{
+    color: white;
+}
+
+.playlist span:hover, .playlist ul li:hover ,.content-bottom span:hover{
+    color: white;
+}
+
+.title-playing>:hover, .icon-playing i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.play-hidden:hover{
+    display: block;
+}
 
 /* media */
 
