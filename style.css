@@ -234,10 +234,73 @@ hr{
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* content left */
+.content-left{
+    display: flex;
+    align-items: center;
+}
+
+.img-playing img{
+    width: 60px;
+}
+
+.title-playing{
+    margin-inline: 15px;
+}
+
+.title-playing h5{
+    color: white;
+}
+
+.icon-playing i{
+    margin-left: 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+/* content center */
+.content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-player i{
+    color: white;
+    font-size: 30px;
+    padding-inline:20px ;
 }
 
 
+.player-line{
+    width: 700px;
+    border: 2px solid var(--text);
+    border-radius: 20px;
+}
 
+/* content right */
+.content-right{
+    display:flex ;
+}
+
+.icon-volume{
+    display: flex;
+    align-items: center;
+}
+
+.icon-volume i{
+    margin-inline:10px ;
+    color: white;
+}
+
+.volume-line{
+    width: 100px;
+    border:2px solid var(--text);
+}
 
 /* media */
 
