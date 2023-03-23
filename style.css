@@ -217,7 +217,6 @@ hr{
     align-items: center;
     width: 100%;
     position: relative;
-    
 }
 
 .play-hidden{
@@ -238,7 +237,7 @@ hr{
 
 .card img, .card-circle img{
     width: 100%;
-    
+    /* position: relative; */
 }
 
 .card h3{
