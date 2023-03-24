@@ -493,7 +493,8 @@ hr{
     z-index: 0;
 }
 
-.fa-circle-play:hover{
+.icon-player i:hover,
+.icon-volume i:hover{
     transform: scale(1.2);
 }
 
