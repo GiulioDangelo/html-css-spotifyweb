@@ -78,6 +78,7 @@ body{
 
 .icone span{
     padding-top: 15px;
+    position: relative;
 }
 
 .icone span span{
@@ -93,44 +94,31 @@ body{
     width: 30px;
 }
 
-.icone span:nth-child(1)::before{
+/* .icone span:before{
     content: "";
     display: block;
     background-color: var(--green);
     position: absolute;
-    left: 0px;
-    top: 102px;
+    left: -57px;
+    top: 10px;
     width: 5px;
     height: 30px;
-    color: var(--green);
-}
+} */
 
-.icone span:nth-child(2)::before{
+.icone:not(:first-child) span:hover::before{
     content: "";
     display: block;
     background-color: var(--green);
     position: absolute;
-    left: 0px;
-    top: 152px;
+    left: -57px;
+    top: 10px;
     width: 5px;
     height: 30px;
-    color: var(--green);
-}
-
-.icone span:nth-child(3)::before{
-    content: "";
-    display: block;
-    background-color: var(--green);
-    position: absolute;
-    left: 0px;
-    top: 202px;
-    width: 5px;
-    height: 30px;
-    color: var(--green);
 }
 
 .playlist{
     margin-top: 30px;
+    position: relative;
 }
 
 .playlist h2{
