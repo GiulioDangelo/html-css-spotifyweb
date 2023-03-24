@@ -352,6 +352,37 @@ hr{
     max-width: 700px;
 }
 
+.player-container::before{
+    content: "1:13";
+    display: block;
+    position: absolute; 
+    left: -50px;
+    bottom: -6px;
+    color: white;
+    font-weight: 500;
+}
+
+.player-container::after{
+    content: "4:20";
+    position: absolute; 
+    right: -50px;
+    bottom: -6px;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* .current-time{
+    position: absolute;
+   
+}
+
+.total-time{
+    position: absolute;
+    right: -40px;
+    bottom: -6px;
+} */
+
 .player-line{
     border: 2px solid var(--text);
     border-radius: 20px;
@@ -487,6 +518,18 @@ hr{
         width:calc(100% / 4 );
     }
 
+    .player-container::before{
+        /* display: none; */
+        top: 7px;
+        left: 2px;
+    }
+    
+
+    .player-container::after{
+        /* display: none; */
+        top: 7px;
+        right: 2px;
+    }
 }
 
 
