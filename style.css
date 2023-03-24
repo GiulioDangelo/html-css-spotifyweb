@@ -105,19 +105,7 @@ body{
     height: 30px;
 }
 
-/* .icone span:hover::before{
-    content: "";
-    display: block;
-    background-color: var(--green);
-    position: absolute;
-    left: -57px;
-    top: 10px;
-    width: 5px;
-    height: 30px;
-} */
-
-.icone .green-line:before, 
-.icone span:hover::before {
+.icone .green-line-static:before{
     content: "";
     display: block;
     background-color: var(--green);
@@ -127,7 +115,7 @@ body{
     width: 5px;
     height: 30px;
 }
-.icone span:not(.green-line)::before{
+.icone span:not(.green-line-static)::before{
     left: -57px;
     top: 10px;
     width: 5px;
@@ -223,7 +211,6 @@ hr{
     color: var(--text);
 }
 
-
 .container{
     width: 100vw;
     height: 100vh;
@@ -310,6 +297,7 @@ hr{
     padding: 20px;
 }
 
+
 /* content left */
 .content-left{
     display: flex;
@@ -337,6 +325,7 @@ hr{
     vertical-align: -webkit-baseline-middle;
     margin-inline:2px ;
 }
+
 
 /* content center */
 .content-center{
@@ -396,6 +385,7 @@ hr{
     position: relative;
 }
 
+
 /* content right */
 .content-right{
     display:flex ;
@@ -417,7 +407,7 @@ hr{
 }
 
 
-/* effetti */
+/* effects */
 .upgrade-btn button:hover{
     transform: scale(1.1);
 }
@@ -442,6 +432,17 @@ hr{
 /* .icone span:hover:not(:first-child) img{
     border-left: 5px solid var(--green);
 } */
+
+.icone .green-line:hover::before{
+    content: "";
+    display: block;
+    background-color: var(--green);
+    position: absolute;
+    left: -20px;
+    top: 15px;
+    width: 5px;
+    height: 30px;
+}
 
 .playlist span:hover,.playlist ul li:hover{
     color: white;
@@ -478,9 +479,9 @@ hr{
     display:block;
 }
 
+
+
 /* media */
-
-
 @media (max-width:1290px){
     .cell{
         width:calc(100% / 4 );
